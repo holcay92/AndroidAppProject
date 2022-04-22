@@ -3,8 +3,6 @@ package com.example.hipolabsproject
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hipolabsproject.databinding.CardCellBinding
 
-
-
 class CardViewHolder(
     private val cardCellBinding: CardCellBinding,
     private val clickListener: MemberClickListener
