@@ -24,6 +24,8 @@ class DetailActivity : AppCompatActivity()
             binding.github.text = member.github
             binding.yearsInHipo.text = member.years_in_hipo.toString()
             binding.position.text = member.position
+            binding.company.text = member.company
+            binding.team.text = member.team
         }
     }
 

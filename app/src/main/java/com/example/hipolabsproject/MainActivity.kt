@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity(), MemberClickListener
             val jsonObj = JSONObject(getJSONFromAssets()!!)
             val jsonArray = jsonObj.getJSONArray("members")
 
+            val company = JSONObject(getJSONFromAssets()!!)["company"].toString()
+            val team = JSONObject(getJSONFromAssets()!!)["team"].toString()
+
+
             for (i in 0 until jsonArray.length()) {
 
                 // creating a JSONObject for fetching a members data
@@ -40,7 +44,7 @@ class MainActivity : AppCompatActivity(), MemberClickListener
                 val position = hipo.getString("position")
                 val years_in_hipo = hipo.getInt("years_in_hipo")
 
-                val memberDetails = Member(name, age, location, github, position, years_in_hipo)
+                val memberDetails = Member(company,team,name, age, location, github, position, years_in_hipo)
 
                 memberList.add(memberDetails)
                 println(memberDetails)

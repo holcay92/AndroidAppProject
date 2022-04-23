@@ -8,4 +8,6 @@
     <string name="name_header">name_header</string>
     <string name="years_in_hipo">years_in_hipo</string>
     <string name="position">position</string>
+    <string name="company">company</string>
+    <string name="team">team</string>
 </resources>
