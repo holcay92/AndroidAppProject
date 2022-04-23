@@ -3,6 +3,7 @@ package com.example.hipolabsproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hipolabsproject.databinding.ActivityMainBinding
 import org.json.JSONException
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity(), MemberClickListener
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val buttonClick = findViewById<Button>(R.id.add_member)
+        buttonClick.setOnClickListener {
+            val intent = Intent(this, MemberActivity::class.java)
+            startActivity(intent)
+        }
 
         try {
 
@@ -47,7 +53,7 @@ class MainActivity : AppCompatActivity(), MemberClickListener
                 val memberDetails = Member(company,team,name, age, location, github, position, years_in_hipo)
 
                 memberList.add(memberDetails)
-                println(memberDetails)
+
             }
         } catch (e: JSONException) {
             e.printStackTrace()
@@ -84,4 +90,6 @@ class MainActivity : AppCompatActivity(), MemberClickListener
         intent.putExtra(MEMBER, member.name)
         startActivity(intent)
     }
+
+
 }

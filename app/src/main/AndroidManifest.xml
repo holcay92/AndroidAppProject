@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HipoLabsProject">
         <activity
-            android:name="DetailActivity"
-            android:exported="true"/>
+            android:name=".MemberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
