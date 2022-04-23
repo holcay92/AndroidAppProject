@@ -4,32 +4,34 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hipolabsproject.databinding.ActivityDetailBinding
 
+
 class DetailActivity : AppCompatActivity()
 {
     private lateinit var binding: ActivityDetailBinding
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bookID = intent.getIntExtra(MEMBER_ID_EXTRA, -1)
-        val book = bookFromID(bookID)
-        if(book != null)
-        {
-            binding.cover.setImageResource(book.cover)
-            binding.title.text = book.title
-            binding.description.text = book.description
-            binding.author.text = book.author
+
+        val name: String? = intent.getStringExtra(MEMBER)
+        val member = bookFromID(name.toString())
+        if(member != null) {
+            binding.name.text = member.name
+            binding.age.text = member.age.toString()
+            binding.location.text = member.location
+            binding.github.text = member.github
+            binding.yearsInHipo.text = member.years_in_hipo.toString()
+            binding.position.text = member.position
         }
     }
 
-    private fun bookFromID(bookID: Int): Member?
+    private fun bookFromID(name: String): Member?
     {
         for(member in memberList)
         {
-            if(member.id == bookID)
+            if(member.name == name)
                 return member
         }
         return null

@@ -1,13 +1,13 @@
 package com.example.hipolabsproject
 
-var memberList = mutableListOf<Member>()
+var memberList = arrayListOf<Member>()
+val MEMBER = "memberEx"
 
-val MEMBER_ID_EXTRA = "memberEx"
-
-class Member(
-    var cover: Int,
-    var author: String,
-    var title: String,
-    var description: String,
-    val id: Int? = memberList.size
+data class Member(
+    val name: String,
+    val age: Int,
+    val location: String,
+    val github: String,
+    val position: String,
+    val years_in_hipo: Int
 )

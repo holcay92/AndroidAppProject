@@ -10,9 +10,8 @@ class CardViewHolder(
 {
     fun bindBook(member: Member)
     {
-        cardCellBinding.cover.setImageResource(member.cover)
-        cardCellBinding.title.text = member.title
-        cardCellBinding.author.text = member.author
+
+        cardCellBinding.title.text = member.name
 
         cardCellBinding.cardView.setOnClickListener{
             clickListener.onClick(member)

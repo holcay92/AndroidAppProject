@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">CardViewRecyclerViewTutorial</string>
-    <string name="cover">Cover</string>
-    <string name="title_place_holder">Title Place Holder</string>
-    <string name="author_placeholder">Author PlaceHolder</string>
+    <string name="app_name">HipLabsProject</string>
+    <string name="add_member">Add Member</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+    <string name="location">location</string>
+    <string name="github">github</string>
+    <string name="name_header">name_header</string>
+    <string name="years_in_hipo">years_in_hipo</string>
+    <string name="position">position</string>
 </resources>

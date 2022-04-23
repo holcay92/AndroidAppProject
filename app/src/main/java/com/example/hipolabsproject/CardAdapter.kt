@@ -4,9 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hipolabsproject.databinding.CardCellBinding
-
 class CardAdapter(
-    private val books: List<Member>,
+    private val members: List<Member>,
     private val clickListener: MemberClickListener
 )
     : RecyclerView.Adapter<CardViewHolder>()
@@ -20,8 +19,8 @@ class CardAdapter(
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int)
     {
-        holder.bindBook(books[position])
+        holder.bindBook(members[position])
     }
 
-    override fun getItemCount(): Int = books.size
+    override fun getItemCount(): Int = members.size
 }
