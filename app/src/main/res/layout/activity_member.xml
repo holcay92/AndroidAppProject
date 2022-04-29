@@ -11,6 +11,8 @@ android:background="@color/ActivityBack"
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -41,6 +43,8 @@ android:background="@color/ActivityBack"
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -71,6 +75,8 @@ android:background="@color/ActivityBack"
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -100,6 +106,8 @@ android:background="@color/ActivityBack"
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -130,6 +138,8 @@ android:background="@color/ActivityBack"
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -160,6 +170,8 @@ android:background="@color/ActivityBack"
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="wrap_content">
         <TextView
 
@@ -193,6 +205,9 @@ android:background="@color/ActivityBack"
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonbackground"
         android:clickable="true"
         android:text="Save"
