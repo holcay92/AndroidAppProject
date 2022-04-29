@@ -1,0 +1,15 @@
+In this project, I tried to use MVVM features. I created a member class as a model, fetched the json file via Gson library. 
+
+I used Recycler View fragment as a view model. It also satisfies the single responsibility rule of SOLID principles.
+
+I keep the data into an arraylist. There are three activity layouts: Main, Detail and Member.
+
+In the main layout, the program fetches the data from json file and uses recycler view as a viewing tool.
+
+You can use the search filter to look for a specific member. By clicking on any of the member names, the app goes to Detail layout.
+
+In here detailed informations are shown. On the main layout clicking on add new member button opens third layout,Member.
+
+In here you can fill the new member's information and by clicking save button the app saves the new member into the arraylist.
+
+if there are any duplicates or any input errors with try-catch the program doesn't save the new member and returns back to main layout.
