@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HipLabsProject</string>
+    <string name="app_name">HipoLabsProject</string>
     <string name="add_member">Add Member</string>
     <string name="name">name</string>
     <string name="age">age</string>
