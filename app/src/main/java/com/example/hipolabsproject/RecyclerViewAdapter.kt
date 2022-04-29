@@ -24,7 +24,6 @@ class RecyclerViewAdapter(private var members: ArrayList<Member>, private val cl
     }
 
     override fun getItemCount(): Int = members.size
-
     fun getFilter(): android.widget.Filter {
         return memberFilter
     }
