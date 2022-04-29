@@ -1,5 +1,4 @@
 package com.example.hipolabsproject
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,7 +17,6 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var myRecyclerView: RecyclerView
     private var adapter: RecyclerViewAdapter? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -64,7 +62,6 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
         val memberListCopy = ArrayList<Member>().apply {
             addAll(memberList)
         }
-
         val mainActivity = this
         adapter = RecyclerViewAdapter(memberListCopy,mainActivity)
         binding.recyclerView.adapter = adapter
@@ -101,8 +98,7 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
         return json
     }
 
-    override fun onClick(member: Member)
-    {
+    override fun onClick(member: Member) {
         val intent = Intent(applicationContext, DetailActivity::class.java)
         intent.putExtra(MEMBER, member.name)
         startActivity(intent)

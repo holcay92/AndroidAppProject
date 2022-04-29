@@ -13,16 +13,14 @@ class RecyclerViewAdapter(private var members: ArrayList<Member>, private val cl
     val memberFilterList = ArrayList<Member>().apply {
         addAll(members)
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder
-    {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
         val from = LayoutInflater.from(parent.context)
         val binding = CardCellBinding.inflate(from, parent, false)
         return CardViewHolder(binding, clickListener)
     }
 
-    override fun onBindViewHolder(holder: CardViewHolder, position: Int)
-    {
-        holder.bindBook(members[position])
+    override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
+        holder.bindMember(members[position])
     }
 
     override fun getItemCount(): Int = members.size
@@ -56,6 +54,5 @@ class RecyclerViewAdapter(private var members: ArrayList<Member>, private val cl
                 notifyDataSetChanged()
             }
         }
-
     }
 }

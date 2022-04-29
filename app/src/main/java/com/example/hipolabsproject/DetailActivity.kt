@@ -4,19 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hipolabsproject.databinding.ActivityDetailBinding
 
-
 class DetailActivity : AppCompatActivity()
 {
     private lateinit var binding: ActivityDetailBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val name: String? = intent.getStringExtra(MEMBER)
-        val member = bookFromID(name.toString())
+        val member = memberFromID(name.toString())
         if(member != null) {
             binding.name.text = member.name
             binding.age.text = member.age.toString()
@@ -28,11 +25,8 @@ class DetailActivity : AppCompatActivity()
             binding.team.text = member.team
         }
     }
-
-    private fun bookFromID(name: String): Member?
-    {
-        for(member in memberList)
-        {
+    private fun memberFromID(name: String): Member? {
+        for(member in memberList) {
             if(member.name == name)
                 return member
         }
