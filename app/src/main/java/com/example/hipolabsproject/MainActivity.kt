@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
                 val hipo = member.getJSONObject("hipo")
                 val position = hipo.getString("position")
                 val years_in_hipo = hipo.getInt("years_in_hipo")
-                val memberDetails = Member(company,team,name, age, location, github, position, years_in_hipo)
+              //  val memberDetails = Member(company,team,name, age, location, github, position, years_in_hipo)
                 if (!memberList.contains(Member(company,team,name,age,location,github,position,years_in_hipo))){
                     memberList.add(Member(company,team,name,age,location,github,position,years_in_hipo))
                 }            }
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
 
     private fun getJSONFromAssets(): String? {
 
-        var json: String? = null
+        val json: String?
         val charset: Charset = Charsets.UTF_8
         try {
             val myUsersJSONFile = assets.open("file.json")

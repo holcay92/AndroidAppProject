@@ -4,4 +4,8 @@
     <color name="mainbackground">#888787</color>
     <color name="subtheme">#BF1212</color>
     <color name="buttonBack">#FF42BA14</color>
+    <color name="ActivityBack">#ECD6D6</color>
+    <color name="ActivityBack1">#E4E3E3</color>
+    <color name="ActivityBack2">#D8C9C9</color>
+
 </resources>

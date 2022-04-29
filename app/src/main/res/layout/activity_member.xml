@@ -181,10 +181,10 @@
     <Button
         android:id="@+id/save"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="60dp"
         android:background="@drawable/buttonbackground"
-        android:text="Save"
         android:clickable="true"
+        android:text="Save"
         android:textColor="#FFFFFF" />
 
 </LinearLayout>
