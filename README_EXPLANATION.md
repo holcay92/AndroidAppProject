@@ -1,6 +1,6 @@
 In this project, I tried to use MVVM features. I created a member class as a model, fetched the json file via Gson library. 
 
-I used Recycler View fragment as a view model. It also satisfies the single responsibility rule of the OOP SOLID principles.
+I used Recycler View fragment as a view. It also satisfies the single responsibility rule of the OOP SOLID principles.
 
 I keep the data in an arraylist. There are three activity layouts: Main, Detail and Member.
 
