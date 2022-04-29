@@ -29,7 +29,9 @@ class MemberActivity : AppCompatActivity() {
             val yearsinhipo: EditText = findViewById(R.id.years_in_hipo_entry_title);
             val years_in_hipo : Int = yearsinhipo.text.toString().toInt();
 
-            memberList.add(Member(company,team,name, age, location, github, position, years_in_hipo))
+            if (!memberList.contains(Member(company,team,name,age,location,github,position,years_in_hipo))){
+                memberList.add(Member(company,team,name,age,location,github,position,years_in_hipo))
+            }
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

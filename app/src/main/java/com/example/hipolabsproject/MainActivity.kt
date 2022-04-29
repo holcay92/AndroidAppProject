@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
         val buttonClick = findViewById<Button>(R.id.add_member)
 // button click field
         buttonClick.setOnClickListener {
-            memberList.clear()
             val intent = Intent(this, MemberActivity::class.java)
             startActivity(intent)
         }
@@ -54,8 +53,9 @@ class MainActivity : AppCompatActivity(), MemberClickListener {
                 val position = hipo.getString("position")
                 val years_in_hipo = hipo.getInt("years_in_hipo")
                 val memberDetails = Member(company,team,name, age, location, github, position, years_in_hipo)
-                memberList.add(memberDetails)
-            }
+                if (!memberList.contains(Member(company,team,name,age,location,github,position,years_in_hipo))){
+                    memberList.add(Member(company,team,name,age,location,github,position,years_in_hipo))
+                }            }
         } catch (e: JSONException) {
             e.printStackTrace()
         }
