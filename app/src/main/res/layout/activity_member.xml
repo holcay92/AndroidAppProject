@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,6 +16,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Name: "
@@ -43,6 +45,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Age: "
@@ -70,6 +73,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="location: "
@@ -97,6 +101,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Github: "
@@ -124,6 +129,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Position: "
@@ -151,6 +157,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Years in Hipo: "
@@ -175,6 +182,9 @@
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:text="Save" />
+        android:background="@drawable/buttonbackground"
+        android:text="Save"
+        android:clickable="true"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>

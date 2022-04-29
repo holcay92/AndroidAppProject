@@ -8,16 +8,16 @@
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/company_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:padding="10dp"
             android:text="Company: "
             android:textColor="@android:color/black"
             android:textSize="22sp"
@@ -30,8 +30,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/company"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@color/maintheme"
+            android:padding="10dp"
             android:textSize="22sp"
             android:lines="1" />
     </LinearLayout>
@@ -41,16 +41,16 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/team_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:padding="10dp"
             android:text="Team: "
             android:textColor="@android:color/black"
             android:textSize="22sp"
             android:textStyle="bold"
             />
-
 
         <TextView
             android:id="@+id/team"
@@ -58,9 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
+
             android:text="@string/team"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:lines="2"
             android:textSize="22sp"/>
     </LinearLayout>
@@ -71,11 +72,12 @@
 
         <TextView
             android:id="@+id/name_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="Name: "
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -86,8 +88,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/name"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="20sp"
 
             android:textStyle="bold"/>
@@ -98,11 +100,12 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/age_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="Age: "
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -114,8 +117,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/age"
-            android:textColor="@color/darkGray"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="18sp"
             android:lines="1" />
     </LinearLayout>
@@ -125,11 +128,12 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/location_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="Location: "
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -141,8 +145,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/location"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -151,11 +155,12 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/github_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="Github: "
+            android:padding="10dp"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -167,8 +172,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/github"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="16sp" />
 
 
@@ -178,10 +183,11 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/position_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:padding="10dp"
             android:text="Position: "
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -194,8 +200,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/position"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="16sp" />
 
 
@@ -205,10 +211,11 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/years_in_hipo_title"
-            android:layout_width="180dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:padding="10dp"
             android:text="Years in Hipo: "
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -221,8 +228,8 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/years_in_hipo"
-            android:textColor="@color/black"
-            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:textSize="16sp" />
 
 

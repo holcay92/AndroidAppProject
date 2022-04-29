@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="darkGray">#222</color>
+    <color name="maintheme">#4C0505</color>
+    <color name="mainbackground">#888787</color>
+    <color name="subtheme">#BF1212</color>
+    <color name="buttonBack">#FF42BA14</color>
 </resources>
