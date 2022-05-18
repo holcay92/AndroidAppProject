@@ -1,4 +1,4 @@
-# HipoLabsProject
+# AndroidAppProject
 
   Project:
   
